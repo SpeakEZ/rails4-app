@@ -33,11 +33,6 @@ gem "ancestry", "2.0.0"
 gem "browser", "~> 0.7.0"
 gem "cancancan", "~> 1.6"
 gem "carrierwave", "~> 1.0.0"
-gem "carrierwave_backgrounder",
-    # As of 5/4/2017 carrierwave_backgrounder is broken with carrierwave 1.x
-    # This commit includes a fix for missing cache_name method
-    github: "ajjahn/carrierwave_backgrounder",
-    ref: "011453867f66760d90558432f795e20766097262"
 gem "kaminari", "~> 0.17.0"
 gem "mini_magick"
 gem "money", "~> 5.0.0"
@@ -55,7 +50,6 @@ gem "unf", "~> 0.1.3"
 
 gem "active_link_to", "~> 1.0.1"
 gem "crypt", "~> 1.1.4"
-gem "dispatch_js", github: "vectorjohn/dispatch_js", branch: "main"
 gem "geoip", "~> 0.8.9"
 gem "rdiscount", "~> 2.1.7"
 
@@ -95,8 +89,7 @@ gem "active_model_serializers", "~> 0.8.1"
 
 gem "counter_culture"
 gem "enumerize", "~> 1.0.0"
-gem "recommendable", github: "davidcelis/recommendable",
-                     ref: "d78e6f7192265d578b89b571aac7bafef8cb4c56"
+gem "recommendable", "~> 2.2.2"
 gem "uuid"
 
 gem "active_model-errors_details"
@@ -141,6 +134,5 @@ group :test do
   gem "apivore"
   gem "launchy"
   gem "sunspot_matchers"
-  gem "sunspot_test", github: "collectiveidea/sunspot_test",
-                      ref: "abae5bf827d6d021aa7df5a3911f517b577974a5"
+  gem "sunspot_test", "~> 0.4.2"
 end
